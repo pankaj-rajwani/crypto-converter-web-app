@@ -1,0 +1,26 @@
+.input_field_wrapper {
+  margin: 7%;
+}
+
+.input_field {
+  border: none !important;
+  background: transparent !important;
+  color: white !important;
+  font-size: 1.8rem !important;
+  text-align: center !important;
+}
+
+.input_field:focus {
+  border-radius: 0px !important;
+  border-bottom: 1px solid var(--clr-background-3) !important;
+}
+
+.control {
+  border: none !important;
+  color: var(--clr-secondary) !important;
+}
+
+.control:hover {
+  color: var(--clr-text) !important;
+  background: var(--clr-background-3) !important;
+}

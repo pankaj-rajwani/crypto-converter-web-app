@@ -1,0 +1,30 @@
+.input {
+  border: none !important;
+  background: transparent !important;
+  color: var(--clr-primary) !important;
+  font-size: 1.9rem !important;
+  text-align: center !important;
+}
+
+.dropdown {
+  border: none !important;
+  background: var(--clr-background-2) !important;
+  color: var(--clr-secondary) !important;
+}
+
+.option {
+  font-size: 1rem !important;
+}
+
+.option:hover {
+  background: var(--clr-background-3) !important;
+  color: var(--clr-text) !important;
+}
+
+.root {
+  margin: 7%;
+}
+
+.section {
+  display: none !important;
+}
