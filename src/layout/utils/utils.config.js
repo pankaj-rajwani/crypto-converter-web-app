@@ -1,1 +1,2 @@
-export const reelBackgroundImages = ['/app-background-1.jpg'];
+import { AppBackground1 } from '@/assets/images';
+export const reelBackgroundImages = [AppBackground1];

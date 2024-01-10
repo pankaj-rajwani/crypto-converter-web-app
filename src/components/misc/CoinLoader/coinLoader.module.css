@@ -17,7 +17,7 @@
       #5d4a1f 62.5%,
       #5d4a1f 100%
     );
-  background-image: url(/bitcoin.png);
+  background-image: url(/src/assets/images/bitcoin.png);
   background-size: 100% 100%;
   background-position: center;
   background-blend-mode: overlay;
