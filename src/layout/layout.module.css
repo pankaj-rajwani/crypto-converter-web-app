@@ -1,0 +1,16 @@
+.landing_wrapper {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reel_container {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  left: 0;
+  z-index: 0;
+}

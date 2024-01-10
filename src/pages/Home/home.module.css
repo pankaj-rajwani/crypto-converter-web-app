@@ -1,0 +1,190 @@
+.landing_container {
+  height: 90%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_wrapper {
+  display: block;
+  text-align: center;
+  color: var(--clr-text);
+}
+
+.logo_svg_path {
+  stroke-dasharray: 2110;
+  stroke-width: 8;
+  stroke-linecap: round;
+  animation: logo_animation 4s linear;
+  fill-opacity: 0;
+  stroke: var(--clr-background-2);
+  stroke-dashoffset: 0;
+}
+
+.header_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--clr-secondary);
+  margin-bottom: 100px;
+  overflow: hidden;
+}
+
+.header,
+.heading_wrapper_1 {
+  display: flex;
+  overflow: hidden;
+}
+.heading_wrapper_2 {
+  display: flex;
+  animation: 2s heading_animation forwards;
+  transform: translateX(-100%);
+}
+
+.heading_part_1 {
+  color: var(--clr-primary);
+  font-weight: bolder;
+  font-size: 5rem;
+}
+
+.heading_part_2 {
+  color: var(--clr-secondary);
+  font-size: 4rem;
+  margin-top: 18px;
+}
+
+.tagline {
+  color: var(--clr-secondary);
+  font-size: 1.8rem;
+  margin-top: 18px;
+  font-weight: 100;
+  overflow: hidden;
+  border-right: 0.15em solid var(--clr-primary);
+  white-space: nowrap;
+  letter-spacing: 0.15em;
+  animation: tagline_typing_animation 2s steps(40, end), tagline_blink_caret_animation 0.75s step-end infinite;
+}
+
+.form_wrapper {
+  animation: form_animation 2s forwards;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  opacity: 0;
+}
+
+.error_message {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  left: 23%;
+  right: 23%;
+  margin: 0 auto;
+  top: 5%;
+  text-align: center;
+  padding: 1%;
+  color: var(--clr-secondary);
+  background: var(--clr-error);
+  opacity: 1;
+  animation: error_message_animation 0.2s linear 1;
+}
+
+.err_cross_icon {
+  cursor: pointer;
+}
+
+.equals_to_sign_wrapper {
+  height: 200px;
+  position: relative;
+}
+
+.coin_loader {
+  margin: 50px auto;
+}
+
+.equals_to_sign {
+  color: var(--clr-secondary);
+  font-weight: bolder;
+  font-size: 5rem;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes logo_animation {
+  0% {
+    stroke-dashoffset: 2110;
+    opacity: 0;
+    stroke: var(--clr-background-2);
+  }
+  15% {
+    opacity: 1;
+    stroke: var(--clr-background-2);
+  }
+  70% {
+    opacity: 1;
+    stroke: var(--clr-background-2);
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+    stroke: var(--clr-background-2);
+  }
+}
+
+@keyframes form_animation {
+  from {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes heading_animation {
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes error_message_animation {
+  from {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes tagline_typing_animation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+@keyframes tagline_blink_caret_animation {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--clr-primary);
+  }
+}
