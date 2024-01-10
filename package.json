@@ -4,6 +4,7 @@
   "license": "MIT",
   "description": "A web application for converting cryptocurrency amounts to various fiat currencies.",
   "type": "module",
+  "author": "Pankaj Rajwani",
   "repository": {
     "type": "git",
     "url": "https://github.com/pankaj-rajwani/crypto-converter-web-app.git"
@@ -25,6 +26,7 @@
     "@mantine/core": "^7.3.2",
     "@mantine/hooks": "^7.4.0",
     "@tabler/icons-react": "^2.45.0",
+    "@vercel/speed-insights": "^1.0.2",
     "axios": "^1.6.3",
     "lodash": "^4.17.21",
     "react": "^18.2.0",

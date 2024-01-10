@@ -1,4 +1,5 @@
 import { object } from 'prop-types';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { configUtils } from './utils';
 import { ReelBackground } from '@/components/misc';
 
@@ -11,6 +12,7 @@ export const Layout = ({ children }) => {
         <ReelBackground slides={configUtils.reelBackgroundImages} />
       </div>
       {children}
+      <SpeedInsights />
     </div>
   );
 };
