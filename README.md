@@ -11,6 +11,7 @@ This React.js application allows users to convert amounts between different cryp
   - [Usage](#usage)
 - [Folder Structure](#folder-structure)
 - [Dependencies](#dependencies)
+- [URL](#url)
 
 ## Features
 
@@ -128,7 +129,7 @@ This folder structure follows clean architecture conventions for organizing a Re
 
 - **vite.config.js:** Configuration file for Vite, a build tool for modern web development.
 
-## Dependecies
+## Dependencies
 
 - React
 - React Router
@@ -138,3 +139,7 @@ This folder structure follows clean architecture conventions for organizing a Re
 
 ...
 Check the package.json file for a complete list of dependencies.
+
+## URL
+
+[https://crypto-converter-nu.vercel.app/](https://crypto-converter-nu.vercel.app/)
