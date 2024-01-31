@@ -143,3 +143,5 @@ Check the package.json file for a complete list of dependencies.
 ## URL
 
 [https://crypto-converter-nu.vercel.app/](https://crypto-converter-nu.vercel.app/)
+
+`NOTE`: _The backend of this web application is deployed at [render.com](https://render.com) using its free tier, which freezes the server if not used oftenly. So, initially the loader might be present at the screen for a longer time._
